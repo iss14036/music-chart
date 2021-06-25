@@ -8,3 +8,5 @@ vendor
 *.dylib
 .DS_Store
 config.env
+postgres-data
+tmp
