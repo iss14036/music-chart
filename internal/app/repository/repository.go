@@ -2,11 +2,10 @@ package repository
 
 import "github.com/iss14036/music-chart/internal/pkg/entity"
 
+//go:generate mockgen -destination=./repository_mock.go -package=repository -source=./repository.go
 type UserRepositoryItf interface {
 	GetUser(filter *entity.UserFilter) (entity.User, error)
-	IsUserLogin(filter *entity.UserFilter) error
 	InsertUser(user *entity.User) error
-	UpdateUser(user *entity.User) error
 }
 
 type MusicRepositoryItf interface {

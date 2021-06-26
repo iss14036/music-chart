@@ -6,6 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
+//go:generate mockgen -destination=./driver_mock.go -package=driver -source=./driver.go
 // GormItf is an interface which DB implements
 type GormItf interface {
 	Close() error

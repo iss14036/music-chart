@@ -1,7 +1,6 @@
 package repository
 
 import (
-	"fmt"
 	"github.com/iss14036/music-chart/configs/schema"
 	"github.com/iss14036/music-chart/internal/pkg/entity"
 	"github.com/iss14036/music-chart/tools/driver"
@@ -11,10 +10,6 @@ import (
 
 type User struct {
 	db driver.GormItf
-}
-
-func (u *User) IsUserLogin(filter *entity.UserFilter) error {
-	panic("implement me")
 }
 
 func (u *User) GetUser(filter *entity.UserFilter) (entity.User, error) {
@@ -51,7 +46,6 @@ func (u *User) InsertUser(user *entity.User) error {
 		return err
 	}
 	user.Password = string(hashPassword)
-	fmt.Println(user.Password)
 	g := u.db.Begin()
 	defer func() {
 		if err != nil {
@@ -68,10 +62,6 @@ func (u *User) InsertUser(user *entity.User) error {
 	}
 
 	return err
-}
-
-func (u *User) UpdateUser(user *entity.User) error {
-	panic("implement me")
 }
 
 func NewUser(database schema.DatabaseReplication) UserRepositoryItf {
