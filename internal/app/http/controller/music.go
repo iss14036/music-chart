@@ -1,11 +1,11 @@
 package controller
 
 import (
-	"strconv"
 	"github.com/iss14036/music-chart/internal/app/service"
 	"github.com/iss14036/music-chart/internal/pkg/constant"
 	"github.com/iss14036/music-chart/internal/pkg/entity"
 	"github.com/iss14036/music-chart/internal/pkg/responsewrapper"
+	"strconv"
 
 	"github.com/labstack/echo/v4"
 )
@@ -61,7 +61,7 @@ func (m *MusicCtrl) DetailMusic(c echo.Context) error {
 		},
 	}
 
-	res, err := m.service.FetchMusic(&filter)
+	res, err := m.service.DetailMusic(&filter)
 	if err != nil {
 		return responsewrapper.BadRequest(c, err, "")
 	}

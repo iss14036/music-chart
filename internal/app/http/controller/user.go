@@ -1,7 +1,6 @@
 package controller
 
 import (
-	"fmt"
 	"github.com/iss14036/music-chart/internal/app/service"
 	"github.com/iss14036/music-chart/internal/pkg/constant"
 	"github.com/iss14036/music-chart/internal/pkg/entity"
@@ -40,7 +39,6 @@ func (u *UserCtrl) InsertUser(c echo.Context) error {
 	if err != nil {
 		return responsewrapper.BadRequest(c, err, "")
 	}
-	fmt.Println(val)
 
 	if err = val.Validate(); err != nil {
 		return responsewrapper.BadRequest(c, err, "")

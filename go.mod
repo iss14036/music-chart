@@ -14,7 +14,7 @@ require (
 	github.com/hashicorp/consul/api v1.1.0 // indirect
 	github.com/jinzhu/gorm v1.9.16
 	github.com/labstack/echo/v4 v4.3.0
-	github.com/magiconair/properties v1.8.5 // indirect
+	github.com/magiconair/properties v1.8.5
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
 	github.com/pelletier/go-toml v1.9.3 // indirect
 	github.com/smartystreets/goconvey v1.6.4 // indirect
