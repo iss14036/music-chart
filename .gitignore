@@ -10,3 +10,4 @@ vendor
 config.env
 postgres-data
 tmp
+coverage.out
