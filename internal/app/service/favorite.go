@@ -1,10 +1,10 @@
 package service
 
 import (
-	"strconv"
 	"github.com/iss14036/music-chart/internal/app/repository"
 	"github.com/iss14036/music-chart/internal/pkg/constant"
 	"github.com/iss14036/music-chart/internal/pkg/entity"
+	"strconv"
 )
 
 type Favorite struct {

@@ -3,21 +3,27 @@ package gateway
 import (
 	"errors"
 	"fmt"
-	"strings"
 	"github.com/iss14036/music-chart/configs"
 	"github.com/iss14036/music-chart/internal/pkg/constant"
 	"github.com/iss14036/music-chart/internal/pkg/responsewrapper"
+	"strings"
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/labstack/echo/v4"
 )
 
+//go:generate mockgen -destination=./auth_mock.go -package=gateway -source=./auth.go
+type AuthItf interface {
+	GetToken(userID int) (string, error)
+	Middleware(next echo.HandlerFunc) echo.HandlerFunc
+}
+
 type Auth struct {
 	cfg *configs.Config
 }
 
-func NewAuth(cfg *configs.Config) *Auth {
+func NewAuth(cfg *configs.Config) AuthItf {
 	return &Auth{
 		cfg: cfg,
 	}

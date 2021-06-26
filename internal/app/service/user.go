@@ -10,7 +10,7 @@ import (
 
 type User struct {
 	repo repository.UserRepositoryItf
-	auth *gateway.Auth
+	auth gateway.AuthItf
 }
 
 func (u *User) Login(filter *entity.UserFilter) (token string, err error) {
@@ -36,7 +36,7 @@ func (u *User) GetUser(filter *entity.UserFilter) (entity.User, error) {
 	return u.repo.GetUser(filter)
 }
 
-func NewUser(repo repository.UserRepositoryItf, auth *gateway.Auth) UserServiceItf {
+func NewUser(repo repository.UserRepositoryItf, auth gateway.AuthItf) UserServiceItf {
 	return &User{
 		repo: repo,
 		auth: auth,

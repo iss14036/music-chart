@@ -28,14 +28,15 @@ CREATE TABLE t_user (
 
 create index users_username_IDX on t_user (username);
 
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('All i need', 'Jacob Collier', '00:03:00', 'Djesse Vol. 3', '2020');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Isn''t she', 'Stevie Wonder', '00:03:00', 'Songs in the Key of Life', '1976');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Stay With Me', 'Miki Matsubara', '00:03:00', 'Pocket Park', '1980');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Love theory', 'Kirk Franklin', '00:03:00', 'Long, Live, Love', '2019');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Smile', 'Kirk Franklin', '00:03:00', 'Hello Fear', '2011');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Mungkin Nanti', 'Ariel', '00:03:00', 'Bintang di Surga', '2004');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('OverJoyed', 'Stevie Wonder', '00:03:00', 'In Square Circle', '1985');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('I just called to say i love you', 'Stevie Wonder', '00:03:00', 'The Woman in Red', '1984');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Januari', 'Glenn Fredly', '00:03:00', 'Selamat Pagi, Dunia!', '2002');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Akhir cerita cinta', 'Glenn Fredly', '00:03:00', 'Selamat Pagi, Dunia!', '2002');
-INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Terserah', 'Glenn Fredly', '00:03:00', 'Private Collection', '2008');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Happier', 'Olivia Rodrigo', '00:02:57', 'Sour', '2021');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('De javu', 'Olivia Rodrigo', '00:03:52', 'Sour', '2021');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Monster', 'Katy', '00:03:00', 'After Hours', '2014');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Begin', 'Maneskin', '00:03:00', 'Chosen', '2017');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('No roots', 'Alice Merton', '00:03:00', 'No roots', '2016');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Here''s Your Perfect', 'Jammi miller', '00:03:00', 'Here''s Your Perfect', '2021');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Take Me To Church E.P.', 'Hozier', '00:03:00', 'Take Me To Church E.P.', '2013');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('build a bi * ch', 'Bella Poarch', '00:03:00', 'build a bi * ch', '2021');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Talking to the moon', 'Bruno Mars', '00:03:00', 'Doo-Wops & Hooligans', '2010');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('At My Worst', 'Pink Sweat', '00:03:00', 'Pink Planet', '2021');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Save your tears', 'The Weeknd', '00:03:00', 'After Hours', '2020');
+INSERT INTO t_music (title, singer, duration, album, release_year) VALUES('Driver License', 'Olivia Rodrigo', '00:03:00', 'Sour', '2021');

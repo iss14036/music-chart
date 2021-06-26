@@ -2,6 +2,7 @@ package service
 
 import "github.com/iss14036/music-chart/internal/pkg/entity"
 
+//go:generate mockgen -destination=./service_mock.go -package=service -source=./service.go
 type UserServiceItf interface {
 	GetUser(filter *entity.UserFilter) (entity.User, error)
 	InsertUser(user *entity.User) error
