@@ -19,6 +19,7 @@ To run this program, you will need
 - Copy environment file from `config.env.example` to be `config.env` or use `ENVIRONMENT VARIABLE` directly
 - Verify and download dependencies `make dep`
 - Run the docker to serve database `make docker-up`
+- Run the application `make run`
 
 ## How to Test
 
